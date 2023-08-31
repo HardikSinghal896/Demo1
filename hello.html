@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <link rel="stylesheet" href="style1.css" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+</head>
+
+<body>
+  <!-- Header starts  -->
+  <nav class="navbar">
+    <div class="navbar-left">
+      <img src="./New folder/LinkedIn logo.png" class="nav-logo" />
+      <div class="search-box">
+        <i class="material-icons">search</i>
+        <input type="text" placeholder="Search" />
+      </div>
+    </div>
+    <ul class="nav-links">
+      <li class="nav-link">
+        <i class="material-icons icons">house</i>
+        <h6>Home</h6>
+      </li>
+      <li class="nav-link">
+        <i class="material-icons icons">people</i>
+        <h6>My Network</h6>
+      </li>
+      <li class="nav-link">
+        <i class="material-icons icons">business_center</i>
+        <h6>Jobs</h6>
+      </li>
+      <li class="nav-link">
+        <i class="material-icons icons">chat</i>
+        <h6>Messaging</h6>
+      </li>
+      <li class="nav-link">
+        <i class="material-icons icons">notifications_active</i>
+        <h6>Notification</h6>
+      </li>
+    </ul>
+    <hr style="height: 3rem;" />
+    <img src="./New folder/Profile.jpg" class="nav-profile" />
+    <div class="profile-dropdown">
+      <div class="profile-button">
+        <img src="profile-picture.jpg" alt="Profile Picture">
+        <span>Manveer Prajapati</span>
+        <i class="material-icons">arrow_drop_down</i>
+      </div>
+      <div class="dropdown-content" id="dropdown-content">
+        <a href="#">Profile</a>
+        <a href="#">Connections</a>
+        <a href="#">Settings & Privacy</a>
+        <a href="#">Help & Support</a>
+        <hr>
+        <a href="#">Sign Out</a>
+      </div>
+    </div>
+    <p class="nav-p">
+      Try premium free for 1 <br> month
+    </p>
+  </nav>
+  <!-- Header ends -->
+
+  <!-- Main Body Start -->
+  <div class="container">
+    <div class="left-panel">
+      <div class="left-panel-top">
+        <img src="./New folder/background.jpg" alt="">
+        <div class="profile-box" style="border-top-left-radius:10px; border-top-right-radius:10px;">
+          <img src="./New folder/Profile.jpg" alt="no image"
+            style="height:80px; width:80px; border-radius: 50%; border:4px solid white; margin:-35px auto 0 auto;">
+        </div>
+        <h3 id="name" style="font-size: 23px;">Manveer Prajapati</h3>
+        <p id="course">Full Stack Developer</p>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Main Body End -->
+  <script>
+    // Get the elements
+    const profileButton = document.querySelector('.profile-button');
+    const dropdownContent = document.getElementById('dropdown-content');
+
+    // Toggle the dropdown content visibility
+    profileButton.addEventListener('click', () => {
+      dropdownContent.classList.toggle('show-dropdown');
+    });
+
+  </script>
+</body>
+
+</html>
